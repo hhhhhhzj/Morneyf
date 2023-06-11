@@ -44,7 +44,6 @@ export default {};
     flex-wrap: wrap;
     > li {
       background: #d9d9d9;
-      // $h: 24px;
       height: 24px;
       line-height: 24px;
       border-radius: 12px;
