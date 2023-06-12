@@ -4,8 +4,7 @@
       {{ value }}
       <span class="name">备注</span>
       <input 
-        @input="onInput"
-        :value = 'value'
+        v-model="value"
         type="text" 
         placeholder="在这里输入备注" />
     </label>
