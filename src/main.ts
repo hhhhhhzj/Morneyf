@@ -7,10 +7,14 @@ import Nav from '@/components/Nav.vue'
 import Layout from '@/components/Layout.vue'
 import Icon from '@/components/Icon.vue'
 import tagListModel from './models/tagListModel'
+import recordListModel from './models/recordListModel'
 
 Vue.component('Nav', Nav)
 Vue.component('Icon', Icon)
 Vue.component('Layout', Layout)
+
+window.recordList = recordListModel.fetch()
+window.createRecord = (record: RecordItem)=>recordListModel.create(record)
 
 window.tagList = tagListModel.fetch()
 window.findTag = (id: string) => {
